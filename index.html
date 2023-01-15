@@ -8,12 +8,7 @@
     <!-- Mis estilos -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Iconos -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
-      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Slider -->
     <link
       rel="stylesheet"
@@ -25,6 +20,7 @@
 
   <body>
     <h1>Primer sitio web</h1>
+    <!-- Navbar -->
     <div class="wrapper">
       <!-- banner -->
       <div class="banner-wrapper">
@@ -45,7 +41,134 @@
             </nav>
           </div>
         </header>
+        <!-- Slider -->
+        <section class="slider-wrap">
+          <ul class="slider1">
+            <li><img src="img/slider/slider1.jpg" alt="Imagen1" /></li>
+            <li><img src="img/slider/slider2.jpg" alt="Imagen2" /></li>
+            <li><img src="img/slider/slider3.jpg" alt="Imagen3" /></li>
+          </ul>
+        </section>
       </div>
     </div>
+
+    <!-- Skills -->
+    <section class="one-third" id="skills">
+      <div class="icon-wrap">
+        <i class="fa fa-desktop"></i>
+      </div>
+      <h3>Diseño web</h3>
+      <p>
+        Laborum nostrud voluptate ex pariatur nostrud. Irure proident
+        consectetur elit duis ea est cupidatat qui. Ut reprehenderit laborum
+        mollit do reprehenderit ipsum. Ex ad sit sit nulla in eu excepteur anim
+        enim culpa aliqua.
+      </p>
+    </section>
+
+    <section class="two-third" id="skills">
+      <div class="icon-wrap">
+        <i class="fa fa-pencil-square-o"></i>
+      </div>
+      <h3>Diseño gráfico</h3>
+      <p>
+        Laborum nostrud voluptate ex pariatur nostrud. Irure proident
+        consectetur elit duis ea est cupidatat qui. Ut reprehenderit laborum
+        mollit do reprehenderit ipsum. Ex ad sit sit nulla in eu excepteur anim
+        enim culpa aliqua.
+      </p>
+    </section>
+
+    <section class="three-third" id="skills">
+      <div class="icon-wrap">
+        <i class="fa fa-code"></i>
+      </div>
+      <h3>Diseño web</h3>
+      <p>
+        Laborum nostrud voluptate ex pariatur nostrud. Irure proident
+        consectetur elit duis ea est cupidatat qui. Ut reprehenderit laborum
+        mollit do reprehenderit ipsum. Ex ad sit sit nulla in eu excepteur anim
+        enim culpa aliqua.
+      </p>
+    </section>
+
+    <!-- Servicios -->
+    <div class="one-third-padding" id="services">
+      <h3>Nuestras Servicios</h3>
+      <img src="/img/pics/image1.png" alt="Imagen1" />
+      <p>
+        Eiusmod elit non sit nostrud nulla incididunt eiusmod exercitation.
+        Labore proident in dolore quis occaecat culpa nostrud. Proident non
+        fugiat commodo ex elit est eiusmod. Do sint excepteur duis sint.
+      </p>
+    </div>
+
+    <div class="two-third-padding" id="services">
+      <h3>Nuestras Servicios</h3>
+      <img src="/img/pics/image2.png" alt="Imagen2" />
+      <p>
+        Eiusmod elit non sit nostrud nulla incididunt eiusmod exercitation.
+        Labore proident in dolore quis occaecat culpa nostrud. Proident non
+        fugiat commodo ex elit est eiusmod. Do sint excepteur duis sint.
+      </p>
+    </div>
+
+    <div class="three-third-padding" id="services">
+      <h3>Nuestras Servicios</h3>
+      <img src="/img/pics/image3.png" alt="Imagen3" />
+      <p>
+        Eiusmod elit non sit nostrud nulla incididunt eiusmod exercitation.
+        Labore proident in dolore quis occaecat culpa nostrud. Proident non
+        fugiat commodo ex elit est eiusmod. Do sint excepteur duis sint.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="banner-wrapper">
+        <div class="icon-text">
+          <div class="icon-text-icon">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#skills">Habilidades</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#portfolio">Portafolio</a></li>
+              <li><a href="#">Nuestro equipo</a></li>
+              <li><a href="#">Contactenos</a></li>
+            </ul>
+
+            <div class="icon-text-text">
+              <ul>
+                <li><a href="mailto:example@example.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+                <li><a href="www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="second-footer">
+      <p>
+        &copy; <a target="_blank" href="https://github.com/animalplay">animalplay</a>
+      </p>
+    </footer>
+    <!-- Scripts for slider -->
+    <script>
+      $(document).ready(function () {
+        $(".slider1").bxSlider({
+          mode: "fade",
+        });
+
+        $(".slider2").bxSlider({
+          mode: "fade",
+        });
+
+        $(".slider3").bxSlider({
+          mode: "fade",
+        });
+      });
+    </script>
   </body>
 </html>
